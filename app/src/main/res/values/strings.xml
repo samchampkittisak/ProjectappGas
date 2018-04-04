@@ -11,4 +11,9 @@
     <string name="News">News</string>
     <string name="data">Data company</string>
     <string name="help">Report a problem</string>
+    <string name="search">Search</string>
+    <string name="setting">setting</string>
+    <string name="logout">Logout</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
 </resources>
