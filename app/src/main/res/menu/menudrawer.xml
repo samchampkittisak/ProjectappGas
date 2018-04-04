@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu1" android:title="@string/buyonline" android:icon="@drawable/ic_add_shopping_cart_black_24dp">
+    <item android:id="@+id/menu1" android:title="@string/buyonline" android:icon="@drawable/ic_add_shopping_cart_black_24dp" android:onClick="gotobuyonline">
     </item>
-    <item android:id="@+id/menu2" android:title="@string/status" android:icon="@drawable/ic_assignment_turned_in_black_24dp"/>
-    <item android:id="@+id/menu3" android:title="@string/purches" android:icon="@drawable/ic_history_black_24dp"/>
-    <item android:id="@+id/menu4" android:title="@string/News" android:icon="@drawable/ic_fiber_new_black_24dp"/>
-    <item android:id="@+id/menu5" android:title="@string/data" android:icon="@drawable/ic_store_mall_directory_black_24dp"/>
-    <item android:id="@+id/menu6" android:title="@string/help" android:icon="@drawable/ic_chat_black_24dp"/>
+    <item android:id="@+id/menu2" android:title="@string/status" android:icon="@drawable/ic_assignment_turned_in_black_24dp" android:onClick="status"/>
+    <item android:id="@+id/menu3" android:title="@string/purches" android:icon="@drawable/ic_history_black_24dp" android:onClick="Purch"/>
+    <item android:id="@+id/menu4" android:title="@string/News" android:icon="@drawable/ic_fiber_new_black_24dp" android:onClick="gotonews"/>
+    <item android:id="@+id/menu5" android:title="@string/data" android:icon="@drawable/ic_store_mall_directory_black_24dp" android:onClick="gotoData"/>
+    <item android:id="@+id/menu6" android:title="@string/help" android:icon="@drawable/ic_chat_black_24dp" android:onClick="gotohelp"/>
 </menu>

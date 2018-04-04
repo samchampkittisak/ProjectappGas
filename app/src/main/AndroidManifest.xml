@@ -17,6 +17,12 @@
         </activity>
 
         <activity android:name=".Shopmain"></activity>
+        <activity android:name=".Buyonline"></activity>
+        <activity android:name=".StatusTrack"></activity>
+        <activity android:name=".Purchase"></activity>
+        <activity android:name=".News"></activity>
+        <activity android:name=".Datacom"></activity>
+        <activity android:name=".Helps"></activity>
     </application>
 
 </manifest>

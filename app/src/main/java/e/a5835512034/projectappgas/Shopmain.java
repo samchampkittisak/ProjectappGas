@@ -61,4 +61,34 @@ public class Shopmain extends AppCompatActivity {
         Intent back = new Intent(this,MainActivity.class);
         startActivityForResult(back,1);
     }
+
+    public void gotobuyonline(MenuItem item) {
+        Intent buyonline = new Intent(this,Buyonline.class);
+        startActivityForResult(buyonline,1);
+    }
+
+    public void status(MenuItem item) {
+        Intent s = new Intent(this,StatusTrack.class);
+        startActivityForResult(s,1);
+    }
+
+    public void Purch(MenuItem item) {
+        Intent P = new Intent(this,Purchase.class);
+        startActivityForResult(P,1);
+    }
+
+    public void gotonews(MenuItem item) {
+        Intent N = new Intent(this,News.class);
+        startActivityForResult(N,1);
+    }
+
+    public void gotoData(MenuItem item) {
+        Intent D = new Intent(this,Datacom.class);
+        startActivityForResult(D,1);
+    }
+
+    public void gotohelp(MenuItem item) {
+        Intent H = new Intent(this,Helps.class);
+        startActivityForResult(H,1);
+    }
 }
