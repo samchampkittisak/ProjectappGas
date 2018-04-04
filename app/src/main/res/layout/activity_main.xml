@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.a5835512034.projectappgas.MainActivity">
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="@string/user"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/writeuser"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintLeft_toLeftOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/pass"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@+id/writeuser"
+        app:layout_constraintTop_toBottomOf="@+id/writeuser" />
+
+    <EditText
+        android:id="@+id/writepass"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintLeft_toLeftOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/pass"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/login"
+        app:layout_constraintLeft_toLeftOf="@+id/writepass"
+        app:layout_constraintTop_toBottomOf="@+id/writepass" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Forgot"
+        android:textColor="#FF0000"
+        app:layout_constraintRight_toRightOf="@+id/writepass"
+        app:layout_constraintTop_toBottomOf="@+id/writepass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/regis"
+        android:textColor="#0000FF"
+        app:layout_constraintLeft_toLeftOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+</android.support.constraint.ConstraintLayout>

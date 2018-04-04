@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LPG distribution system</string>
+    <string name="user">User</string>
+    <string name="pass">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="Forgot">Forgot your password ?</string>
+    <string name="regis">Register ?</string>
+    <string name="buyonline">Product Category</string>
+    <string name="status">Product Status</string>
+    <string name="purches">Order History</string>
+    <string name="News">News</string>
+    <string name="data">Data company</string>
+    <string name="help">Report a problem</string>
+</resources>
