@@ -12,17 +12,18 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Shopmain"></activity>
-        <activity android:name=".Buyonline"></activity>
-        <activity android:name=".StatusTrack"></activity>
-        <activity android:name=".Purchase"></activity>
-        <activity android:name=".News"></activity>
-        <activity android:name=".Datacom"></activity>
-        <activity android:name=".Helps"></activity>
+        <activity android:name=".Shopmain" />
+        <activity android:name=".Buyonline" />
+        <activity android:name=".StatusTrack" />
+        <activity android:name=".Purchase" />
+        <activity android:name=".News" />
+        <activity android:name=".Datacom" />
+        <activity android:name=".Helps" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>

@@ -15,9 +15,10 @@ import android.view.MenuItem;
 public class Shopmain extends AppCompatActivity {
     private DrawerLayout mDrawerLayout ;
     private ActionBarDrawerToggle actionBarDrawerToggle;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.shop_main);
+        setContentView(R.layout.shopmain);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         actionBarDrawerToggle = new ActionBarDrawerToggle(Shopmain.this,
