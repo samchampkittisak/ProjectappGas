@@ -62,7 +62,9 @@
         android:text="@string/Forgot"
         android:textColor="#FF0000"
         app:layout_constraintRight_toRightOf="@+id/writepass"
-        app:layout_constraintTop_toBottomOf="@+id/writepass" />
+        app:layout_constraintTop_toBottomOf="@+id/writepass"
+        android:onClick="passworduser"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,6 +73,7 @@
         android:text="@string/regis"
         android:textColor="#0000FF"
         app:layout_constraintLeft_toLeftOf="@+id/login"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        android:onClick="regis"/>
 
 </android.support.constraint.ConstraintLayout>

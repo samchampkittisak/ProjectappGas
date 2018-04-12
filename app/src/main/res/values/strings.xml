@@ -16,4 +16,10 @@
     <string name="logout">Logout</string>
     <string name="open_drawer">Open</string>
     <string name="close_drawer">Close</string>
+    <string name="hot">hot</string>
+    <string name="discount">discount</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pass">PassActivity</string>
 </resources>

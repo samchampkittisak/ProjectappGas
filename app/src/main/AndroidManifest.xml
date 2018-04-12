@@ -16,14 +16,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Shopmain" />
-        <activity android:name=".Buyonline" />
-        <activity android:name=".StatusTrack" />
-        <activity android:name=".Purchase" />
-        <activity android:name=".News" />
-        <activity android:name=".Datacom" />
-        <activity android:name=".Helps" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity
+            android:name=".Shopmain"
+            android:label="หน้าหลัก" />
+        <activity
+            android:name=".Buyonline"
+            android:label="ซื้อของออนไลน์" />
+        <activity
+            android:name=".StatusTrack"
+            android:label="สถานะการจัดส่งสินค้า" />
+        <activity
+            android:name=".Purchase"
+            android:label="ประวัติการสั่งสินค้า" />
+        <activity
+            android:name=".News"
+            android:label="ข่าวสาร" />
+        <activity
+            android:name=".Datacom"
+            android:label="ข้อมูลร้านค้า" />
+        <activity
+            android:name=".Helps"
+            android:label="ขอความช่วยเหลือ" />
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".PassActivity"
+            android:label="get password" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".BasketActivity"></activity>
     </application>
 
 </manifest>

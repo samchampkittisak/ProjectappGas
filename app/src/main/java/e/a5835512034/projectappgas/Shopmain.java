@@ -1,24 +1,38 @@
 package e.a5835512034.projectappgas;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toolbar;
 
 public class Shopmain extends AppCompatActivity {
     private DrawerLayout mDrawerLayout ;
     private ActionBarDrawerToggle actionBarDrawerToggle;
+    private ViewPager viewPager;
+    private Toolbar toolbar;
+    private TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shopmain);
+
+
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         actionBarDrawerToggle = new ActionBarDrawerToggle(Shopmain.this,
@@ -29,6 +43,53 @@ public class Shopmain extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+    }
+
+    public class CustomAdapter extends BaseAdapter {
+
+        Context mContext;
+        String[] strName;
+        int[] resId;
+
+        public CustomAdapter(Context context, String[] strName, int[] resId) {
+            this.mContext= context;
+            this.strName = strName;
+            this.resId = resId;
+        }
+
+        @Override
+        public int getCount() {
+            return strName.length;
+        }
+
+        @Override
+        public Object getItem(int i) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            LayoutInflater mInflater =
+                    (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            if(view == null)
+                view = mInflater.inflate(R.layout.shopmain, viewGroup, false);
+
+            TextView textView = (TextView)view.findViewById(R.id.list_item);
+            textView.setText(strName[i]);
+
+            ImageView imageView = (ImageView)view.findViewById(R.id.image_item);
+            imageView.setBackgroundResource(resId[i]);
+            return view;
+        }
+    }
+
+    private void setSupportActionBar(Toolbar toolbar) {
     }
 
     @Override
@@ -91,5 +152,10 @@ public class Shopmain extends AppCompatActivity {
     public void gotohelp(MenuItem item) {
         Intent H = new Intent(this,Helps.class);
         startActivityForResult(H,1);
+    }
+
+    public void basket(MenuItem item) {
+        Intent B = new Intent(this,BasketActivity.class);
+        startActivityForResult(B,1);
     }
 }
