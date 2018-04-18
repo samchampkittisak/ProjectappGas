@@ -42,7 +42,7 @@
             android:name=".PassActivity"
             android:label="get password" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".BasketActivity"></activity>
+        <activity android:name=".BasketActivity" android:label="@string/order"></activity>
     </application>
 
 </manifest>

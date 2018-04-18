@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapemenu01"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="brand:"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="@+id/con"
+            app:layout_constraintLeft_toRightOf="@+id/image02"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="weight:"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/brand"
+            app:layout_constraintLeft_toRightOf="@+id/image02"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="price:"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/weight"
+            app:layout_constraintLeft_toRightOf="@+id/image02"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="HOT"
+            android:textColor="#ff0000"
+            app:layout_constraintRight_toRightOf="@+id/con"
+            app:layout_constraintTop_toTopOf="@+id/con" />
+
+        <ImageView
+            android:id="@+id/image02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/ic_launcher_round"
+            app:layout_constraintLeft_toLeftOf="@+id/con"
+            app:layout_constraintTop_toTopOf="@+id/con"
+            app:layout_constraintBottom_toBottomOf="@+id/con"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="test"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@+id/weight"
+            app:layout_constraintTop_toTopOf="@+id/weight"
+            app:layout_constraintBottom_toBottomOf="@+id/weight"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
